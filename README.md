@@ -1,2 +1,7 @@
-# real-estate-catalog
-A fullstack group project as part of the curriculum of The 10x Academy.
+# Real Estate Catalog Project
+
+This is a collaborative project to create a real estate catalog.
+
+Stay tuned for updates as we work on building the catalog to showcase various properties available for rent or purchase.
+
+More details coming soon!
