@@ -1,0 +1,31 @@
+Components for Add New Property Page
+
+Sidebar
+Topbar
+Navigation bar for Add New Property
+
+Routes:-
+-Basic Info Form
+-Property Detail Form
+-General Info Form
+-Location Info Form
+
+Components for Property Listings Page
+
+Sidebar
+Topbar
+Search bar
+Add Property button
+Properties Table
+
+Routes:-
+-Add New Property Page
+
+Components for Signin & Signup Page
+
+Sign In Form
+Signup Form
+
+Routes:-
+-Signin Page
+-Signup Page
