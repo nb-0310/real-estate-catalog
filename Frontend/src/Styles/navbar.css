@@ -12,7 +12,7 @@
   justify-items: center;
   font-weight: 600;
   color: #aaaaaa;
-  box-shadow: 2px 2px 2px#808fa0;
+  border-bottom: 1px solid #E1F9F4;
   font-size: 20px;
 }
 .username {

@@ -3,6 +3,7 @@ import { temp } from "../Context/Context";
 import Logout from "./Logout";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import "../Styles/navbar.css";
 
 export const Navbar = () => {
   const { userinfo, setUserInfo } = useContext(temp);
