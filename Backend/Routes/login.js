@@ -14,7 +14,8 @@ bcrypt.hash(userData.password, 10)
     let user = new User({
         email : userData.email,
         password : encreptedPassword,
-        confirmPassword : encreptedPassword,
+        confirmPassword: encreptedPassword
+        
       
 
     })
@@ -22,7 +23,9 @@ bcrypt.hash(userData.password, 10)
         res.status(201).json({
             message: 'user registered saved successfully',
             data : userData
+            
          })
+       
     })
     .catch(err =>{
         res.status(500).json({
@@ -73,7 +76,7 @@ userRoute.post('/login', (req, res) => {
                             message : 'aunthecation failed 1'
                         })
                 res.status(401).json({
-                    message : 'aunthecatin failed'
+                    message : 'aunthecation failed'
                 })
             })
         }
@@ -83,3 +86,4 @@ userRoute.post('/login', (req, res) => {
 
 
 module.exports = userRoute;
+
