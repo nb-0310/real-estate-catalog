@@ -1,13 +1,20 @@
-const express = require('express');
-const mongoose = require('mongoose');
+const express = require("express");
+const connection = require("./Config/db");
+const userRoutes = require("./Routes/property");
+const cors = require("cors");
+const getroutes = require("./Routes/getRoutes");
+connection();
+
 const app = express();
-// const PORT = process.env.PORT || 5000;
 
-require('./Config/db');
-const apiRoutes = require('./Routes/test');
+app.use(cors());
+app.use(userRoutes);
+app.use("/get", getroutes);
 
-app.use('/test', apiRoutes);
+app.get("*", (req, res) => {
+  res.status(404).send("API IS NOT FOUND");
+});
 
-// app.listen(PORT, () => {
-//   console.log(`Server is running on port ${PORT}`);
-// });
+app.listen(3016 || process.env.PORT, () => {
+  console.log("Listening on port 3016");
+});
