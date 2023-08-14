@@ -7,9 +7,8 @@ export const Home = (props) => {
   const [idStatus, setidStatus] = useState({ id: "", status: "" });
   useEffect(() => {
     function statusHandler(id) {
-      // status=="Sold"?setstatus("UnSold"):setstatus("Sold")
       console.log(idStatus.id);
-      // let id=idStatus.id
+
       fetch(
         `https://real-estate-catalog-gp8x.onrender.com/get/updatestatus/${idStatus.id}`,
         {
@@ -80,7 +79,7 @@ export const Home = (props) => {
                       </button>
                     </td>
                     <td>
-                      {values.status == "unsold"
+                      {values.status == "Unsold"
                         ? Math.floor(Math.random() * 100)
                         : "00"}
                     </td>
