@@ -70,9 +70,3 @@ To run the Real Estate Catalogue frontend locally, follow these steps:
 ## Acknowledgments
 
 This project was inspired by the need for a user-friendly platform to list and browse real estate properties for sale. Special thanks to the developers and contributors of the React.js, React Router, Context, and Toastify.js libraries for their amazing work.
-
-## Contact
-
-If you have any questions or suggestions regarding the Real Estate Catalogue project, please feel free to contact us at eshwaramahendra0120@gmail.com.
-
-Happy browsing and listing!

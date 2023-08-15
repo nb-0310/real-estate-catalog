@@ -72,9 +72,3 @@ To run the Real Estate Catalogue backend locally, follow these steps:
 ## Acknowledgments
 
 This project was inspired by the need for a platform to list and browse real estate properties for sale. Special thanks to the developers and contributors of Node.js, Express.js, MongoDB, and Firebase for their amazing work.
-
-## Contact
-
-If you have any questions or suggestions regarding the Real Estate Catalogue backend project, please feel free to contact us at eshwaramahendra0120@gmail.com.
-
-Happy listing and browsing!
