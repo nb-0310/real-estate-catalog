@@ -1,98 +1,56 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+    min-height: 100vh;
+    height: max-content;
 }
 
-.login {
-  background-color: #e1f9f4;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 55px;
+.login-container{
+    height: max-content;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    letter-spacing: 0.25px;
 }
-#container {
-  border: none;
-  height: 583px;
-  width: 564px;
-  border-radius: 10px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* padding-top: 67px;
-    padding-bottom: 42px; */
-  padding: 57px;
+
+.login-form{
+    display: flex;
+    height: max-content;
+    place-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 45%;
 }
-.h1 {
-  color: #4c57b6;
-  font-weight: 400;
-  letter-spacing: 0.25px;
-  font-size: 40px;
+
+
+.login-btn{
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    height: max-content;
+    padding: 10px;
 }
-.p {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
+
+.input-box{
+    width: 80%;
+    max-width: 400px;
 }
-.flexing {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.txt-center{
+    text-align: center;
 }
-.head {
-  gap: 25px;
+
+@media screen and (width <= 786px){
+    .login-form{
+        width: 70%;
+    }
 }
-.inp-field {
-  gap: 34px;
-  position: relative;
-}
-.eye {
-  position: absolute;
-  top: 112px;
-  right: 20px;
-  color: #c5c5c5;
-  cursor: pointer;
-}
-.btn-field {
-  gap: 31px;
-}
-#signin {
-  background-color: #4c57b6;
-  color: white;
-  width: 65%;
-  height: 60px;
-  border-radius: 8px;
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  border: none;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-}
-.signup {
-  border: none;
-  background-color: white;
-  color: #4c57b6;
-  background: none;
-  font-weight: 600px;
-}
-.signup:hover {
-  cursor: pointer;
-}
-#signin:hover {
-  cursor: pointer;
-}
-#sgnup {
-  color: #352d66;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-}
-.error {
-  text-align: center;
-  color: red;
+
+@media screen and (width <= 512px){
+    .login-form{
+        width: 90%;
+    }
 }
