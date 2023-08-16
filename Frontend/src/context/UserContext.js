@@ -12,7 +12,7 @@ const UserContextProvider = ({ children }) => {
         email: localStorage.getItem("email") || "unknown",
     };
     let tkn = localStorage.getItem("tkn");
-    const SERVER_ADDRESS = 'https://real-estate-catalogue.onrender.com/'
+    const SERVER_ADDRESS = 'https://real-estate-catalog-velo.onrender.com/'
     const [dataRefresh, setDataRefresh] = useState(true);
 
     const intialFormData = {

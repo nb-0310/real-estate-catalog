@@ -37,8 +37,7 @@ addPropertyController.use('', upload.single("image"), async (req, res) => {
         const downloadURL = await getDownloadURL(snapShot.ref);
 
         const propertyDetails = new FinalInfo ({
-            ...req.body,
-            image: downloadURL
+            ...req.body
         })
         const data = await propertyDetails.save();
 
@@ -52,7 +51,7 @@ addPropertyController.use('', upload.single("image"), async (req, res) => {
     catch (e) {
         console.log(e)
         return res.status(400).json({
-            "message": e.message
+            "message": e.message + 'firebase error'
         })
     }
 });

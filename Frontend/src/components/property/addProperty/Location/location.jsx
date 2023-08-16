@@ -20,7 +20,7 @@ const LocationFormInfo = () => {
   const handleSubmit = async () => {
     const upload = toast.loading('Please wait a moment adding the property....')
     const convertedFormData = new FormData();
-
+    
     for (const [key, value] of Object.entries(formData)) {
       convertedFormData.append(`${key}`, `${value}`);
     }
