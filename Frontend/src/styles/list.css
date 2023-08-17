@@ -168,6 +168,13 @@ tbody {
   scroll-behavior: smooth;
 }
 
+.sold-unsold {
+  color: #fff;
+  background-color: #6ab4f8;
+  border: none;
+  border-radius: 5px;
+}
+
 @media screen and (width <=400px) {
   .search-bar {
     width: 80px;
