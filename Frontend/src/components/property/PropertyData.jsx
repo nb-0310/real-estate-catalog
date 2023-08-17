@@ -40,7 +40,11 @@ export default function PropertyData({ item }) {
       <td>{mobile}</td>
       <td>{area}</td>
       <td>{Math.floor(Math.random() * 100)}</td>
-      <td className="sold-unsold">{Math.round(Math.random()) == 0 ? "Sold" : "Unsold"}</td>
+      <td>
+        <button className="sold-unsold">
+        {Math.round(Math.random()) == 0 ? "Sold" : "Unsold"}
+        </button>
+      </td>
       <td>{Math.floor(Math.random() * 100)}</td>
       <td className="action-container">
         <div
