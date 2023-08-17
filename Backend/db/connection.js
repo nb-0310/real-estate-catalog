@@ -4,7 +4,7 @@ module.exports = async () => {
 
     try {
         await mongoose.connect(
-            `${process.env.USER_NAME}${process.env.USER_PASSWORD}${process.env.DATABSE}`
+            'mongodb+srv://nirzarbhatt16036:nb03102000@cluster0.lhhaw3w.mongodb.net/?retryWrites=true&w=majority'
         )
     }
     catch (err) {
