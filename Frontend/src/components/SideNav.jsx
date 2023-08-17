@@ -17,17 +17,17 @@ export default function SideNav() {
     },
     {
       logo: <AssistanceLogo />,
-      text: 'PPD Assistance',
+      text: 'Assistance',
       style : 'assist'
     },
     {
       logo: <ReceivedIntrestLogo />,
-      text: 'Received Intrest',
+      text: 'Received Interest',
       style : 'receive'
     },
     {
       logo: <SentIntrestLogo />,
-      text: 'Sent Intrest',
+      text: 'Sent Interest',
       style : 'sent'
     },
     {
@@ -43,7 +43,6 @@ export default function SideNav() {
   ]
 
   return (
-    // <div className='main-container green-bg'>
     <>
     <div className='green-bg side-nav'>
       <div className='logo'><BrandLogo /></div>
@@ -60,6 +59,5 @@ export default function SideNav() {
       </div>
     </div>
     </>
-    // </div>
   )
 }

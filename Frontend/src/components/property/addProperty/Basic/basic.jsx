@@ -11,7 +11,6 @@ import { FormSelect } from "react-bootstrap";
 const BasicInfoForm = () => {
 
     const { updateFormData, formData, cancelFormFilling, loginStatus } = useContext(UserContext);
-    // console.log(basicContext);
 
     const navigate = useNavigate();
     useEffect(() => {
@@ -26,12 +25,10 @@ const BasicInfoForm = () => {
                 <form>
                     <div className="basic-form-flexbox">
                         <FloatingLabel
-                            // className='input-box'
                             controlId="floatingInput"
                             label="Property Type"
                         >
                             <Form.Select aria-label="Default select example"
-                                // size="lg"
                                 placeholder="Property Type"
                                 name="property_type" value={formData.property_type} onChange={updateFormData} required
                             >
@@ -40,18 +37,6 @@ const BasicInfoForm = () => {
                                 <option value="flat">Flat</option>
                             </Form.Select>
                         </FloatingLabel >
-                        {/* <FloatingLabel
-                               controlId="floatingInput"
-                               label="Property Type" 
-                            >
-                                  <span style={{ color: "red" }}>*</span>:
-                                <select name="property_type" value={formData.property_type} onChange={updateFormData} required>
-                                    <option value="plot">Plot</option>
-                                    <option value="house">House</option>
-                                    <option value="flat">Flat</option>
-                                </select>
-                            </FloatingLabel> */}
-
                         <FloatingLabel
                             controlId="floatingInput"
                             label="Negotiable"
@@ -74,7 +59,6 @@ const BasicInfoForm = () => {
                         </FloatingLabel>
 
                         <FloatingLabel
-                            // controlId="floatingInput"
                             label="Ownership"
                         >
                             <FormSelect
@@ -133,10 +117,10 @@ const BasicInfoForm = () => {
                                 <button onClick={() => {
                                     cancelFormFilling();
                                     navigate('/list');
-                                }}>cancel</button>
+                                }}>Cancel</button>
                             </div>
                             <div>
-                                <Link to={"/propertydetails"}><button type="submit">Save & continue</button></Link>
+                                <Link to={"/propertydetails"}><button type="submit">Save & Continue</button></Link>
                             </div>
                         </div>
 

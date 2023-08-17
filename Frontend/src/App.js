@@ -1,5 +1,3 @@
-// import { useState } from 'react';
-// import './App.css';
 import './styles/utils.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -23,7 +21,7 @@ import Home from './components/Home';
 
 function App() {
   const {loginStatus} = useContext(UserContext);
-  // console.log(loginStatus)
+  console.log(loginStatus)
   // const notify = () => toast("Wow so easy!");
 
   return (
@@ -41,7 +39,6 @@ function App() {
       pauseOnHover
       theme="colored"
     />
-    {/* <button onClick={notify}>Notify!</button> */}
       {
         loginStatus ?
         <>

@@ -1,0 +1,27 @@
+.img-field {
+    display: none;
+}
+
+.img-upload-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #6AB4F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-upload-icon > img {
+    width: 30px;
+    height: 30px;
+}
+
+.img-upload {
+    display: flex;
+    justify-content: flex-start;
+    gap: 18px;
+    align-items: center;
+}

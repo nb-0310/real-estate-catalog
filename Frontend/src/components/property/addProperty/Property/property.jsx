@@ -182,10 +182,10 @@ const PropertyFormInfo = () => {
                         <div></div>
                         <div className="button-container">
                             <div>
-                                <Link to={"/basicinfo"}><button>Pervious</button></Link>
+                                <Link to={"/basicinfo"}><button>Previous</button></Link>
                             </div>
                             <div>
-                                <Link to={"/generalinfo"}><button>Save & continue</button></Link>
+                                <Link to={"/generalinfo"}><button>Save & Continue</button></Link>
                             </div>
                         </div>
                 </Form>

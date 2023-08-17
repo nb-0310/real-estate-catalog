@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { UserContext } from '../../context/UserContext';
 import { Link, useNavigate } from 'react-router-dom';
-// import ListGroup from 'react-bootstrap/ListGroup';
 import '../../styles/list.css';
 import SearchLogo from '../../utils/SearchLogo';
 import PropertyData from './PropertyData';
